@@ -274,7 +274,7 @@ export class Gantt implements IVisual {
 
     public static DefaultValues = {
         AxisTickSize: 6,
-        BarMargin: 2,
+        BarMargin: 0,
         ResourceWidth: 100,
         TaskColor: "#00B099",
         TaskLineColor: "#ccc",

@@ -134,7 +134,7 @@ export class GeneralCardSettings extends Card {
         name: "barsRoundedCorners",
         displayName: "Bars Rounded Corners",
         displayNameKey: "Visual_BarsRoundedCorners",
-        value: true
+        value: false
     });
 
     name: string = "general";

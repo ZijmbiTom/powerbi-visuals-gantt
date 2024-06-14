@@ -2407,11 +2407,6 @@ export class Gantt implements IVisual {
             height = Gantt.getBarHeight(taskConfigHeight),
             radius = Gantt.RectRound;
 
-
-        if (barsRoundedCorners && width >= 2 * radius) {
-            return drawRoundedRectByPath(x, y, width, height, radius);
-        }
-
         return drawNotRoundedRectByPath(x, y, width, height);
     }
 
@@ -2639,10 +2634,6 @@ export class Gantt implements IVisual {
 
                 if (width < radius) {
                     x = x - width / 2;
-                }
-
-                if (this.formattingSettings.generalCardSettings.barsRoundedCorners.value && width >= 2 * radius) {
-                    return drawRoundedRectByPath(x, y, width, height, radius);
                 }
 
                 return drawNotRoundedRectByPath(x, y, width, height);
